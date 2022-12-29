@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+}
+
+.main-container { 
+  display: flex; 
+  align-items: center; 
+  flex-direction: column; 
+  height: 100%;
+  width: 100%;
+}
+    
+.download-users-container { 
+  height: 15%;
+  width: 100%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column; 
+  background-color: lavender; 
+  font-size: 1.2em;
+}
+
+.download-users-button { 
+  font-size: 1em;
+  width: 15%;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: rgb(187, 122, 149);
+  cursor: pointer;
+}
+     
+.download-users-button:hover { 
+  transition: background-color 0.5s ease; 
+  background-color: rgb(182, 73, 118) !important; 
+  color: white;
+}
+    
+.users-container { 
+  height: 100%;
+  width: 100%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(187, 122, 149);
+}
+    
+.users-container {
+  height: 100%;
+}
+    
+.download-result-container { 
+  width: 100%;
+  height: 15%;
+  padding: 10px 0; 
+  align-items: center; 
+  display: flex; 
+  justify-content: center;
+} 
+
+.download-result-status {
+  height: 70%;
+  width: 15%;
+  background-color: lavender; 
+  font-size: 1.4em; 
+  align-items: center; 
+  display: flex; 
+  justify-content: center; 
+  visibility: hidden;
+}
+     
+.list-users-container { 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  height: 100%;
+  width: 100%;
+  border-top: 1px solid lavender;
+}
+    
+.user-data {
+  height: 100%;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+}
+    
+.user-data:not(:last-child) { 
+  border-right: 1px solid lavender;
+}
+    
+.user-data-img-container img { 
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.user-text-info {
+  color: lavender;
+  font-size: 15px;
+  margin-top: 10px;
+  flex: 1;
+}
+    
+.user-text-info ul {
+  list-style: none; 
+  height: 100%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+}
+
+.user-text-info ul li { 
+  padding: 20px;
+}
